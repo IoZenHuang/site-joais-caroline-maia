@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Best Practices: Title Tag & Meta Description -->
+    <title>Caroline Maia Joias | Elegância em Cada Detalhe</title>
+    <meta name="description" content="Descubra a coleção exclusiva de joias da Caroline Maia. Peças atemporais e sofisticadas para realçar sua beleza.">
+    
+    <!-- Google Fonts: Playfair Display for headings (elegant) and Inter for body text (clean) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS v5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons (para o botão do WhatsApp) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="70" tabindex="0">
+
+    <!-- Navegação (Header) -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand font-playfair fw-bold" href="#">Caroline Maia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto font-inter">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#colecoes">Coleções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <!-- Redireciona para o form de cadastro da própria página -->
+                        <a class="btn btn-outline-gold rounded-pill px-4" href="#cadastro">Seja VIP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrossel de Imagens (Hero Section) -->
+    <header id="inicio">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="carousel-overlay"></div>
+                    <img src="assets/images/slide1.png" class="d-block w-100 carousel-img" alt="Anel de diamante luxuoso e brilhante">
+                    <div class="carousel-caption d-none d-md-block slide-in-bottom">
+                        <h1 class="font-playfair fw-bold text-gold display-3 shadow-text">Brilho Eterno</h1>
+                        <p class="font-inter lead text-light text-shadow">Descubra a perfeição em cada ângulo com nossos diamantes exclusivos.</p>
+                        <a href="#cadastro" class="btn btn-gold btn-lg mt-3 rounded-0 px-4">Conhecer Mais</a>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="carousel-overlay"></div>
+                    <img src="assets/images/slide2.png" class="d-block w-100 carousel-img" alt="Colar de ouro elegante sobre mármore">
+                    <div class="carousel-caption d-none d-md-block slide-in-bottom">
+                        <h2 class="font-playfair fw-bold text-gold display-3 shadow-text">Ouro Sofisticado</h2>
+                        <p class="font-inter lead text-light text-shadow">Design minimalista e atemporal para mulheres com classe.</p>
+                        <a href="#cadastro" class="btn btn-gold btn-lg mt-3 rounded-0 px-4">Ver Coleção</a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="carousel-overlay"></div>
+                    <img src="assets/images/slide3.png" class="d-block w-100 carousel-img" alt="Brincos de safira de luxo">
+                    <div class="carousel-caption d-none d-md-block slide-in-bottom">
+                        <h2 class="font-playfair fw-bold text-gold display-3 shadow-text">Azul Profundo</h2>
+                        <p class="font-inter lead text-light text-shadow">Safiras selecionadas sob a mais cuidadosa lapidação.</p>
+                        <a href="#cadastro" class="btn btn-gold btn-lg mt-3 rounded-0 px-4">Explorar</a>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Coleções em Destaque -->
+    <section id="colecoes" class="py-5 bg-section">
+        <div class="container py-5">
+            <div class="text-center mb-5 fade-in-section">
+                <span class="text-gold font-inter text-uppercase letter-spacing-2 font-weight-bold">Novidades</span>
+                <h2 class="font-playfair display-5 text-white mt-2">Destaques da Temporada</h2>
+                <div class="divider-gold mx-auto mt-3"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white border-0 card-hover h-100">
+                        <img src="assets/images/slide1.png" class="card-img-top img-fluid" alt="Anéis">
+                        <div class="card-body text-center p-4">
+                            <h3 class="font-playfair h4 text-gold">Anéis</h3>
+                            <p class="card-text text-muted font-inter small">Beleza para sua mãos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white border-0 card-hover h-100">
+                        <img src="assets/images/slide2.png" class="card-img-top img-fluid" alt="Colares">
+                        <div class="card-body text-center p-4">
+                            <h3 class="font-playfair h4 text-gold">Colares</h3>
+                            <p class="card-text text-muted font-inter small">O toque de luxo final</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white border-0 card-hover h-100">
+                        <img src="assets/images/slide3.png" class="card-img-top img-fluid" alt="Brincos">
+                        <div class="card-body text-center p-4">
+                            <h3 class="font-playfair h4 text-gold">Brincos</h3>
+                            <p class="card-text text-muted font-inter small">Delicadeza que ilumina</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="sobre" class="py-5 bg-white text-dark">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 pe-lg-5">
+                    <span class="text-gold font-inter text-uppercase letter-spacing-2 fw-semibold">Clássico & Moderno</span>
+                    <h2 class="font-playfair display-5 mt-2 mb-4 text-dark">A Arte da Joalheria</h2>
+                    <p class="font-inter text-muted lead">Na Caroline Maia Joias, acreditamos que uma joia carrega muito mais do que seu valor em ouro ou pedras preciosas. Ela carrega histórias, momentos e sentimentos inesquecíveis.</p>
+                    <p class="font-inter text-muted">Com anos de tradição em alta joalheria, nosso propósito é oferecer peças exclusivas com um design que perdura ao longo das gerações. Nossos ateliês trabalham com maestria, transformando matérias-primas raras em verdadeiras obras de arte.</p>
+                    <a href="#cadastro" class="btn btn-outline-dark mt-4 rounded-0 px-4 py-2 text-uppercase letter-spacing-1 font-inter">Descobrir Mais</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <!-- Imagem meramente ilustrativa no sobre -->
+                        <img src="assets/images/slide1.png" class="img-fluid rounded shadow-lg about-image" alt="Detalhe do trabalho do joalheiro">
+                        <div class="experience-badge bg-gold text-dark text-center p-4 rounded shadow">
+                            <h4 class="font-playfair fw-bold mb-0 h2">15</h4>
+                            <p class="font-inter text-uppercase small mb-0 fw-semibold">Anos de <br> Tradição</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Cadastro (Lead Capture) -->
+    <section id="cadastro" class="py-5 registration-section">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="form-wrapper bg-dark p-4 p-md-5 rounded-4 shadow-lg text-white">
+                        <div class="text-center mb-4">
+                            <i class="bi bi-envelope-paper text-gold fs-1 mb-3"></i>
+                            <h2 class="font-playfair fw-bold h1">Entre para o Clube Vip</h2>
+                            <p class="font-inter text-light">Cadastre-se para receber convites para eventos exclusivos, lançamentos de coleções e ofertas especiais.</p>
+                        </div>
+                        
+                        <!-- Formulário -->
+                        <form id="leadForm" class="needs-validation font-inter" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="nome" class="form-label text-gold small text-uppercase letter-spacing-1">Nome Completo</label>
+                                    <input type="text" class="form-control custom-input" id="nome" required placeholder="Ex: Maria Silva">
+                                    <div class="invalid-feedback">Por favor, insira seu nome.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="telefone" class="form-label text-gold small text-uppercase letter-spacing-1">WhatsApp</label>
+                                    <input type="tel" class="form-control custom-input" id="telefone" required placeholder="(00) 00000-0000">
+                                    <div class="invalid-feedback">Insira um número de WhatsApp válido.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label text-gold small text-uppercase letter-spacing-1">E-mail</label>
+                                    <input type="email" class="form-control custom-input" id="email" required placeholder="seuemail@exemplo.com">
+                                    <div class="invalid-feedback">Insira um e-mail válido.</div>
+                                </div>
+                                <div class="col-12 mt-4 text-center">
+                                    <button class="btn btn-gold w-100 py-3 rounded-pill fw-bold text-uppercase letter-spacing-1 shadow" type="submit">
+                                        Quero ser VIP
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        <!-- Mensagem de Sucesso (Oculta por padrão) -->
+                        <div id="successMessage" class="alert alert-success mt-4 d-none text-center" role="alert">
+                            <i class="bi bi-check-circle-fill me-2"></i> Cadastro realizado com sucesso! Bem-vinda ao clube.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-black text-white pt-5 pb-3 font-inter">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="font-playfair fw-bold text-gold mb-3 h4">Caroline Maia</h3>
+                    <p class="text-muted small pe-lg-4">Criando joias atemporais que celebram as maiores histórias da sua vida. Qualidade, exclusividade e design impecável.</p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="font-playfair fw-bold text-gold mb-3 h5">Contato</h3>
+                    <ul class="list-unstyled text-muted small">
+                        <li class="mb-2"><i class="bi bi-geo-alt text-gold me-2"></i> Av. Paulista, 1000 - São Paulo, SP</li>
+                        <li class="mb-2"><i class="bi bi-telephone text-gold me-2"></i> (11) 99999-9999</li>
+                        <li class="mb-2"><i class="bi bi-envelope text-gold me-2"></i> contato@carolinemaia.com.br</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="font-playfair fw-bold text-gold mb-3 h5">Siga-nos</h3>
+                    <div class="social-links">
+                        <a href="#" class="text-white bg-dark p-2 rounded-circle me-2 icon-hover"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white bg-dark p-2 rounded-circle me-2 icon-hover"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white bg-dark p-2 rounded-circle icon-hover"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-3 text-center">
+                <p class="text-muted small mb-0">&copy; 2026 Caroline Maia Joias. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Whatsapp Floating Button -->
+    <!-- The user can change the number later. For now, it points to a dummy number. -->
+    <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20joias." class="whatsapp-float bg-success text-white shadow-lg d-flex align-items-center justify-content-center" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="bi bi-whatsapp fs-2"></i>
+    </a>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
